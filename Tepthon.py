@@ -121,7 +121,7 @@ ownerhson_id = 1421814874
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply(' عدنان يمك  لاتخاف @PP6ZZ')
+        order = await event.reply(' حيدر يمك  لاتخاف @H_D71')
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
@@ -395,13 +395,13 @@ async def _(event):
 
 - سورس  تشكير يوزرات  
 - المطور 
- @PP6ZZ .
+ @h_d71 .
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍"""
 )
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".مطور"))
 async def _(event):
-      await event.reply(""" ADNAN : @PP6ZZ"""
+      await event.reply(""" HIADER : @H_D71"""
 )
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".حلويات"))
