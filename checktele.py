@@ -444,7 +444,9 @@ def gen_user(choice):
         f3 = 'vip'+d1+d2+d2+d2
         f4 = 'vip'+d1+d1+d1+d2
         f5 = 'id'+d1+d2+d3
-        f = f1,f2,f3,f4,f5
+        f6 = d1+d1+d3+d1+d3+d3+d1
+        f7 = d1+d1+d2+d1+d2+d2+d1
+        f = f1,f2,f3,f4,f5,f6,f7
         f = random.choice(f)
         username =f
         if username in banned[0]:
@@ -455,8 +457,10 @@ def gen_user(choice):
             f3 = 'vip'+d1+d2+d2+d2
             f4 = 'vip'+d1+d1+d1+d2
             f5 = 'id'+d1+d2+d3
-            f6 = 'bet'+d1+d2+d3
-            f = f1,f2,f3,f4,f5,f6
+            f6 = d1+d1+d3+d1+d3+d3+d1
+            f7 = d1+d1+d2+d1+d2+d2+d1
+            f8 = 'bet'+d1+d2+d3
+            f = f1,f2,f3,f4,f5,f6,f7,f8
             f = random.choice(f)
             username =f
         else:
