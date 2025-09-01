@@ -1,3 +1,4 @@
+
 #pylint:disable=E0001
 import random
 import threading
@@ -538,7 +539,7 @@ async def _(event):
                 try:
                     await Tepthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/36", caption=f'''
+                    await event.client.send_file(event.chat_id, "https://t.me/v_yip/40", caption=f'''
 ⌯ Done caught ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
@@ -546,7 +547,7 @@ async def _(event):
 ⤷ By : ( @h_d71 )  
     ''')
                     
-                    await event.client.send_file("@h_d71", "https://t.me/illl0o/36", caption=f'''
+                    await event.client.send_file("@h_d71", "https://t.me/v_yip/40", caption=f'''
 ⌯ Done caught ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
@@ -644,7 +645,7 @@ Channel
                 await event.client.send_message(event.chat_id, f'''
 Haider CHECKER
 User : @{username}        
-Channel / @r6r6rr
+Channel / @v_yip
 @h_d71
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
