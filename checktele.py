@@ -440,17 +440,17 @@ def gen_user(choice):
         d3 = str(''.join((random.choice(b) for i in range(1))))
         f1 = 'vip'+d1+d2+d3        # طول 6 مثال: vip739
         f2 = 'id'+d1+d2+d3          # طول 5 مثال: id739
-        f3 = 'bet'+d1+d2+d3         # طول 6 مثال: bet739
+        f3 = 'bet'+d1+d2+d2         # طول 6 مثال: bet739
         f4 = 'pro'+d1+d2+d3         # طول 6 مثال: pro739
-        f5 = 'xx'+d1+d2+d3+'xx'     # طول 7 مثال: xx739xx
+        f5 = 'x'+d1+d2+d1+'x'     # طول 7 مثال: xx739xx
         f6 = 'king'+d1+d2           # طول 6 مثال: king73
-        f7 = 'q'+d1+d2+d3+'q'       # طول 6 مثال: q739q
+        f7 = 'q'+d1+d3+d3+'q'       # طول 6 مثال: q739q
         f8 = 'vip_'+d1+d2+d3        # طول 7 مثال: vip_739
         f9 = 'hero'+d3+d2+d1        # طول 7 مثال: hero937
-        f10 = 'xx_'+d1+d2+d3        # طول 7 مثال: xx_739
+        f10 = 'xx_'+d2+d3        # طول 7 مثال: xx_739
         f11 = 'top'+d1+d2+d3        # طول 6 مثال: top739
         f12 = 'pro_'+d1+d2          # طول 6 مثال: pro_73
-        f13 = 'bet'+d1+d2+d3
+        f13 = 'bet'+d3+d2+d3
         f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
         username = random.choice(f)
         if username in banned[0]:
@@ -459,17 +459,17 @@ def gen_user(choice):
             d3 = str(''.join((random.choice(b) for i in range(1))))
             f1 = 'vip'+d1+d2+d3
             f2 = 'id'+d1+d2+d3
-            f3 = 'bet'+d1+d2+d3
+            f3 = 'bet'+d1+d2+d2
             f4 = 'pro'+d1+d2+d3
-            f5 = 'xx'+d1+d2+d3+'xx'
+            f5 = 'x'+d1+d2+d1+'x'
             f6 = 'king'+d1+d2
-            f7 = 'q'+d1+d2+d3+'q'
+            f7 = 'q'+d1+d3+d3+'q'
             f8 = 'vip_'+d1+d2+d3
             f9 = 'hero'+d3+d2+d1
-            f10 = 'xx_'+d1+d2+d3
+            f10 = 'xx_'+d2+d3
             f11 = 'top'+d1+d2+d3
             f12 = 'pro_'+d1+d2
-            f13 = 'bet'+d1+d2+d3
+            f13 = 'bet'+d3+d2+d3
             f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
             username = random.choice(f)
         else:
@@ -497,8 +497,17 @@ def gen_user(choice):
     # الأنواع الجديدة 29-33
     if choice == "29":
         # نوع: أسماء عربية شائعة
-        arabic_names = ['ali', 'omar', 'mohamed', 'ahmed', 'khaled', 'hassan', 'hussain', 'yousef', 'ibrahim', 'mustafa']
-        numbers = ''.join(random.choices(b, k=2))
+        arabic_names = ['ali', 'omar', 'mohamed', 'ahmed', 'khaled', 'hassan', 'hussain', 'yousef', 'ibrahim', 'mustafa',
+'fadi', 'sami', 'tariq', 'mahmoud', 'samir', 'nabil', 'raed', 'jamal', 'bilal', 'fares',
+'ghassan', 'zayd', 'amir', 'nader', 'reda', 'waleed', 'karim', 'salim', 'hakim', 'mounir',
+'adel', 'firas', 'yazan', 'rami', 'anas', 'laith', 'qasem', 'mohsen', 'bashar', 'hadi',
+'ayman', 'saif', 'mohannad', 'yahya', 'mazen', 'kamel', 'samih', 'tamer', 'bader', 'omarion',
+'farid', 'ahsan', 'younis', 'raihan', 'malik', 'ismail', 'zain', 'rayan', 'nashit', 'taha',
+'jawad', 'ameer', 'khalil', 'nadim', 'qais', 'fahad', 'yasir', 'aziz', 'mohit', 'bilalh',
+'saleh', 'rashid', 'omarh', 'hameed', 'muhsin', 'fahmi', 'yaman', 'kareem', 'tawfiq', 'nasir',
+'raouf', 'sufyan', 'fayez', 'zaki', 'abdul', 'samad', 'maher', 'ammar', 'hisham', 'adil',
+'mustakim', 'nizar', 'qadir', 'tamerh', 'ghazi', 'younah', 'fayad', 'hamza', 'ayoub', 'naderh']
+
         username = random.choice(arabic_names) + numbers
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
@@ -533,7 +542,12 @@ def gen_user(choice):
     
     if choice == "33":
         # نوع: أسماء مشاهير
-        celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie']
+        celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie',
+'lebron', 'cristiano', 'adele', 'rihanna', 'drake', 'shakira', 'beyonce', 'justin', 'taylor', 'emma',
+'zoe', 'liam', 'noah', 'oliver', 'lucas', 'mason', 'logan', 'elena', 'nina', 'luke',
+'harry', 'hermione', 'ron', 'bella', 'edward', 'jacob', 'arian', 'selena', 'gigi', 'kendall',
+'miley', 'sasha', 'barack', 'michelle', 'donald', 'vladimir', 'angela', 'theresa', 'emily', 'sophia']
+
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(celebrities) + numbers
         if username in banned[0]:
