@@ -70,7 +70,7 @@ def gen_user(choice):
             c = random.choices(a)
             d = random.choices(b)
             s = random.choices(e)
-            f = [c[0], "_", d[0], "_",极[0]]
+            f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
         else:
             pass
@@ -93,7 +93,7 @@ def gen_user(choice):
         d = str(''.join((random.choice(e) for i in range(1))))
         f1 = c+'_'+d+c+d
         f2 = c+d+c+'_'+d
-        f3 =极+d+'_'+d+c
+        f3 = c+d+'_'+d+c
         f4 = c+'_'+d+d+c
         f = f1,f2,f3,f4
         f = random.choice(f)
@@ -183,7 +183,7 @@ def gen_user(choice):
         if username in banned[0]:
             c = d = random.choices(a)
             d = random.choices(e)
-            f = [c[0], d[0], '_' , d[极], d[0]]
+            f = [c[0], d[0], '_' , d[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
     else:
@@ -191,10 +191,10 @@ def gen_user(choice):
     if choice == "10":
         c = d = random.choices(a)
         d = random.choices(a)
-        f = [极[0], d[0], c[0] , '_' , d[0]]
+        f = [c[0], d[0], c[0] , '_' , d[0]]
         random.shuffle(f)
         username = ''.join(f)
-        if username极 banned[0]:
+        if username in banned[0]:
             c = d = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], c[0] , '_' , d[0]]
@@ -308,13 +308,13 @@ def gen_user(choice):
         c = random.choices(aa)
         d = random.choices(ee)
         s = random.choices(aaa)
-        f = [s[0], s[0], s[极], d[0], c[0]]    
+        f = [s[0], s[0], s[0], d[0], c[0]]    
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(aa)
             d = random.choices(ee)
             s = random.choices(aaa)
-           极 = [s[0], s[0], s[0], d[0], c[0]]    
+            f = [s[0], s[0], s[0], d[0], c[0]]    
             username = ''.join(f)
         else:
             pass
@@ -322,8 +322,8 @@ def gen_user(choice):
         c = random.choices(aa)
         d = random.choices(aaa)
         s = random.choices(ee)
-        f = [s[0], c[极], c[0], c[0], d[0]]    
-        username极 ''.join(f)
+        f = [s[0], c[0], c[0], c[0], d[0]]    
+        username = ''.join(f)
         if username in banned[0]:
             c = random.choices(aa)
             d = random.choices(aaa)
@@ -412,7 +412,7 @@ def gen_user(choice):
             c = random.choices(e)
             d = random.choices(b)
             s = random.choices(a)
-            f = [c[0], s[0], d[0], d[极], d[0]]    
+            f = [c[0], s[0], d[0], d[0], d[0]]    
             username = ''.join(f)
         else:
             pass
@@ -431,6 +431,7 @@ def gen_user(choice):
             f = [c[0], s[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
+            username = username+'bot'
         else:
             pass
     if choice == "27":
@@ -493,23 +494,33 @@ def gen_user(choice):
             username = 'vip'+username
         else:
             pass
+    # الأنواع الجديدة 29-33
     if choice == "29":
         # نوع: أسماء عربية شائعة
-        arabic_names = ['ali', 'omar', 'mohamed', 'ahmed', 'khaled', 'hassan', 'hussain', 'yousef', 'ibrahim', 'mustafa',
-'fadi', 'sami', 'tariq', 'mahmoud', 'samir', 'nabil', 'raed', 'jam极', 'bilal', 'fares',
-'ghassan', 'zayd', 'amir', 'nader', 'reda', 'waleed', 'karim', 'salim', 'hakim', 'mounir',
-'adel', 'firas', 'yazan', 'rami', 'anas', 'laith', 'qasem', 'mohsen', 'bashar', 'hadi',
-'ayman', 'saif', 'mohannad', 'yahya', 'mazen', 'kamel', 'samih', 'tamer', 'bader', 'omarion',
-'farid', 'ahsan', 'younis', 'raihan', 'malik', 'ismail', 'zain', 'rayan', 'nashit', 'taha',
-'jawad', 'ameer', 'khalil', 'nadim', 'qais', 'fahad', 'yasir', 'aziz', 'mohit', 'bilalh',
-'saleh', 'rashid', 'omarh', 'hameed', 'muhsin', 'fahmi', 'yaman', 'kareem', 'tawfiq', 'nasir',
-'raouf', 'sufyan', 'fayez', 'zaki', 'abdul', 'samad', 'maher', 'ammar', 'hisham', 'adil',
-'mustakim', 'nizar', 'qadir', 'tamerh', 'ghazi', 'younah', 'fayad', 'hamza', 'ayoub', 'naderh']
+        arabic_names = ['ali', 'omar', 'mohamed', 'ahmed', 'khaled', 'hassan', 'hussain', 'yousef', 'ibrahim', 'mustafa']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(arabic_names) + numbers
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(arabic_names) + numbers
+    
+    if choice == "30":
+        # نوع: كلمات إنجليزية شائعة
+        english_words = ['star', 'moon', 'sun', 'sky', 'sea', 'king', 'queen', 'gold', 'love', 'angel']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(english_words) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(english_words) + numbers
+    
+    if choice == "31":
+        # نوع: أسماء حيوانات
+        animals = ['lion', 'tiger', 'eagle', 'wolf', 'fox', 'bear', 'shark', 'snake', 'horse', 'cat']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(animals) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(animals) + numbers
     
     if choice == "32":
         # نوع: أسماء بلدان
@@ -519,6 +530,15 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(countries) + numbers
+    
+    if choice == "33":
+        # نوع: أسماء مشاهير
+        celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(celebrities) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(celebrities) + numbers
     
     return username
 
@@ -578,7 +598,7 @@ async def _(event):
                 try:
                     await Tepthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/v_y极/40", caption=f'''
+                    await event.client.send_file(event.chat_id, "https://t.me/v_yip/40", caption=f'''
 ⌯ Done caught ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
