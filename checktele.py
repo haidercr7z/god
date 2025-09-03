@@ -1,4 +1,3 @@
-
 #pylint:disable=E0001
 import random
 import threading
@@ -439,41 +438,40 @@ def gen_user(choice):
         d1 = str(''.join((random.choice(b) for i in range(1))))
         d2 = str(''.join((random.choice(b) for i in range(1))))
         d3 = str(''.join((random.choice(b) for i in range(1))))
-       f1  = 'vip'+d1+d2+d3        # طول 6 مثال: vip739
-f2  = 'id'+d1+d2+d3          # طول 5 مثال: id739
-f3  = 'bet'+d1+d2+d3         # طول 6 مثال: bet739
-f4  = 'pro'+d1+d2+d3         # طول 6 مثال: pro739
-f5  = 'xx'+d1+d2+d3+'xx'     # طول 7 مثال: xx739xx
-f6  = 'king'+d1+d2           # طول 6 مثال: king73
-f7  = 'q'+d1+d2+d3+'q'       # طول 6 مثال: q739q
-f8  = 'vip_'+d1+d2+d3        # طول 7 مثال: vip_739
-f9  = 'hero'+d3+d2+d1        # طول 7 مثال: hero937
-f10 = 'xx_'+d1+d2+d3+'_xx'   # طول 8 مثال: xx_739_xx → ممكن نقص حرف لو تريد بالضبط 7
-f11 = 'top'+d1+d2+d3         # طول 6 مثال: top739
-f12 = 'pro_'+d1+d2+d3+'_id'  # طول 9 مثال: pro_739_id → ممكن نقص أو نختار d1+d2 فقط
-f13 = 'bet'+d1+d2+d3
-f = f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13
-        f = random.choice(f)
-        username =f
+        f1 = 'vip'+d1+d2+d3        # طول 6 مثال: vip739
+        f2 = 'id'+d1+d2+d3          # طول 5 مثال: id739
+        f3 = 'bet'+d1+d2+d3         # طول 6 مثال: bet739
+        f4 = 'pro'+d1+d2+d3         # طول 6 مثال: pro739
+        f5 = 'xx'+d1+d2+d3+'xx'     # طول 7 مثال: xx739xx
+        f6 = 'king'+d1+d2           # طول 6 مثال: king73
+        f7 = 'q'+d1+d2+d3+'q'       # طول 6 مثال: q739q
+        f8 = 'vip_'+d1+d2+d3        # طول 7 مثال: vip_739
+        f9 = 'hero'+d3+d2+d1        # طول 7 مثال: hero937
+        f10 = 'xx_'+d1+d2+d3        # طول 7 مثال: xx_739
+        f11 = 'top'+d1+d2+d3        # طول 6 مثال: top739
+        f12 = 'pro_'+d1+d2          # طول 6 مثال: pro_73
+        f13 = 'bet'+d1+d2+d3
+        f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
+        username = random.choice(f)
         if username in banned[0]:
             d1 = str(''.join((random.choice(b) for i in range(1))))
             d2 = str(''.join((random.choice(b) for i in range(1))))
-          f1  = 'vip'+d1+d2+d3        # طول 6 مثال: vip739
-f2  = 'id'+d1+d2+d3          # طول 5 مثال: id739
-f3  = 'bet'+d1+d2+d3         # طول 6 مثال: bet739
-f4  = 'pro'+d1+d2+d3         # طول 6 مثال: pro739
-f5  = 'xx'+d1+d2+d3+'xx'     # طول 7 مثال: xx739xx
-f6  = 'king'+d1+d2           # طول 6 مثال: king73
-f7  = 'q'+d1+d2+d3+'q'       # طول 6 مثال: q739q
-f8  = 'vip_'+d1+d2+d3        # طول 7 مثال: vip_739
-f9  = 'hero'+d3+d2+d1        # طول 7 مثال: hero937
-f10 = 'xx_'+d1+d2+d3+'_xx'   # طول 8 مثال: xx_739_xx → ممكن نقص حرف لو تريد بالضبط 7
-f11 = 'top'+d1+d2+d3         # طول 6 مثال: top739
-f12 = 'pro_'+d1+d2+d3+'_id'  # طول 9 مثال: pro_739_id → ممكن نقص أو نختار d1+d2 فقط
+            d3 = str(''.join((random.choice(b) for i in range(1))))
+            f1 = 'vip'+d1+d2+d3
+            f2 = 'id'+d1+d2+d3
+            f3 = 'bet'+d1+d2+d3
+            f4 = 'pro'+d1+d2+d3
+            f5 = 'xx'+d1+d2+d3+'xx'
+            f6 = 'king'+d1+d2
+            f7 = 'q'+d1+d2+d3+'q'
+            f8 = 'vip_'+d1+d2+d3
+            f9 = 'hero'+d3+d2+d1
+            f10 = 'xx_'+d1+d2+d3
+            f11 = 'top'+d1+d2+d3
+            f12 = 'pro_'+d1+d2
             f13 = 'bet'+d1+d2+d3
-            f = f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13
-            f = random.choice(f)
-            username =f
+            f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
+            username = random.choice(f)
         else:
             pass
     if choice == "28":
@@ -496,6 +494,52 @@ f12 = 'pro_'+d1+d2+d3+'_id'  # طول 9 مثال: pro_739_id → ممكن نقص
             username = 'vip'+username
         else:
             pass
+    # الأنواع الجديدة 29-33
+    if choice == "29":
+        # نوع: أسماء عربية شائعة
+        arabic_names = ['ali', 'omar', 'mohamed', 'ahmed', 'khaled', 'hassan', 'hussain', 'yousef', 'ibrahim', 'mustafa']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(arabic_names) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(arabic_names) + numbers
+    
+    if choice == "30":
+        # نوع: كلمات إنجليزية شائعة
+        english_words = ['star', 'moon', 'sun', 'sky', 'sea', 'king', 'queen', 'gold', 'love', 'angel']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(english_words) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(english_words) + numbers
+    
+    if choice == "31":
+        # نوع: أسماء حيوانات
+        animals = ['lion', 'tiger', 'eagle', 'wolf', 'fox', 'bear', 'shark', 'snake', 'horse', 'cat']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(animals) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(animals) + numbers
+    
+    if choice == "32":
+        # نوع: أسماء بلدان
+        countries = ['egypt', 'ksa', 'uae', 'qatar', 'oman', 'iraq', 'jordan', 'lebanon', 'morocco', 'tunisia']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(countries) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(countries) + numbers
+    
+    if choice == "33":
+        # نوع: أسماء مشاهير
+        celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie']
+        numbers = ''.join(random.choices(b, k=2))
+        username = random.choice(celebrities) + numbers
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=2))
+            username = random.choice(celebrities) + numbers
+    
     return username
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
