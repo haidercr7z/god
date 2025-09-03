@@ -542,7 +542,7 @@ async def _(event):
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
-    if ispay2[0] ==极yes":
+    if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 2)
