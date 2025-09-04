@@ -438,10 +438,10 @@ def gen_user(choice):
         d1 = str(''.join((random.choice(b) for i in range(1))))
         d2 = str(''.join((random.choice(b) for i in range(1))))
         d3 = str(''.join((random.choice(b) for i in range(1))))
-        f1 = 'vip'+d1+d2+d3        # طول 6 مثال: vip739
+        f1 = 'vip'+d2+d2+d3        # طول 6 مثال: vip739
         f2 = 'id'+d1+d2+d3          # طول 5 مثال: id739
         f3 = 'bet'+d1+d2+d2         # طول 6 مثال: bet739
-        f4 = 'pro'+d1+d2+d3         # طول 6 مثال: pro739
+        f4 = 'pro'+d1+d1+d3         # طول 6 مثال: pro739
         f5 = 'x'+d1+d2+d1+'x'     # طول 7 مثال: xx739xx
         f6 = 'king'+d1+d2           # طول 6 مثال: king73
         f7 = 'q'+d1+d3+d3+'q'       # طول 6 مثال: q739q
@@ -457,10 +457,10 @@ def gen_user(choice):
             d1 = str(''.join((random.choice(b) for i in range(1))))
             d2 = str(''.join((random.choice(b) for i in range(1))))
             d3 = str(''.join((random.choice(b) for i in range(1))))
-            f1 = 'vip'+d1+d2+d3
+            f1 = 'vip'+d2+d2+d3
             f2 = 'id'+d1+d2+d3
             f3 = 'bet'+d1+d2+d2
-            f4 = 'pro'+d1+d2+d3
+            f4 = 'pro'+d1+d1+d3
             f5 = 'x'+d1+d2+d1+'x'
             f6 = 'king'+d1+d2
             f7 = 'q'+d1+d3+d3+'q'
@@ -497,7 +497,40 @@ def gen_user(choice):
     # الأنواع الجديدة 29-33
     if choice == "29":
         # نوع: أسماء عربية شائعة
-        arabic_names = ['ali', 'omar', 'mohamed', 'ahmed', 'khaled', 'hassan', 'hussain', 'yousef', 'ibrahim', 'mustafa']
+        arabic_names = [
+            'ali', 'omar', 'ahmed', 'mohamed', 'mahmoud', 'khaled', 'hassan', 
+            'hussain', 'yousef', 'ibrahim', 'mustafa', 'fadi', 'sami', 'tariq', 
+            'samir', 'nabil', 'raed', 'jamal', 'bilal', 'fares', 'ghassan', 
+            'zayd', 'amir', 'nader', 'reda', 'waleed', 'karim', 'salim', 
+            'hakim', 'mounir', 'adel', 'firas', 'yazan', 'rami', 'anas', 
+            'laith', 'qasem', 'mohsen', 'bashar', 'hadi', 'ayman', 'saif', 
+            'mohannad', 'yahya', 'mazen', 'kamel', 'samih', 'tamer', 'bader', 
+            'farid', 'ahsan', 'younis', 'raihan', 'malik', 'ismail', 'zain', 
+            'rayan', 'nashit', 'taha', 'jawad', 'ameer', 'khalil', 'nadim', 
+            'qais', 'fahad', 'yasir', 'aziz', 'mohit', 'saleh', 'rashid', 
+            'hameed', 'muhsin', 'fahmi', 'yaman', 'kareem', 'tawfiq', 'nasir', 
+            'raouf', 'sufyan', 'fayez', 'zaki', 'abdul', 'samad', 'maher', 
+            'ammar', 'hisham', 'adil', 'nizar', 'qadir', 'ghazi', 'hamza', 
+            'ayoub', 'riad', 'saeed', 'tareq', 'wael', 'zaid', 'yasser', 
+            'jamil', 'basil', 'emad', 'fikri', 'hani', 'jaber', 'kamal', 
+            'lubna', 'majid', 'nasser', 'osama', 'qasim', 'rafiq', 'salam', 
+            'talal', 'wassim', 'yahia', 'zaher', 'ashraf', 'badr', 'dari', 
+            'essam', 'fadel', 'gamil', 'hareth', 'imad', 'joud', 'khalid', 
+            'lotfi', 'mamoun', 'najeeb', 'othman', 'pascal', 'rakan', 'sabri', 
+            'tawfik', 'wajdi', 'yacoub', 'zuhair', 'adnan', 'bashir', 'dalia', 
+            'faisal', 'hadeel', 'issam', 'johar', 'kinda', 'leena', 'mouna', 
+            'nadia', 'omar', 'pasha', 'raja', 'sahar', 'taher', 'waleed', 
+            'yara', 'zaina', 'abood', 'bassam', 'dana', 'fahd', 'hala', 
+            'iraq', 'jana', 'karma', 'lina', 'maha', 'noor', 'ola', 'rami', 
+            'sana', 'tariq', 'waad', 'yara', 'zoya', 'amal', 'baraa', 'diana', 
+            'farah', 'hana', 'iman', 'juman', 'kawthar', 'layal', 'marwa', 
+            'nada', 'omar', 'raghad', 'sally', 'tala', 'wafa', 'yumna', 
+            'zahra', 'alaa', 'budoor', 'dunya', 'faten', 'hoor', 'ivon', 
+            'jory', 'kholoud', 'lama', 'mai', 'nour', 'rabab', 'sama', 
+            'tulin', 'wijdan', 'yasmin', 'zakia', 'abrar', 'bayaan', 'dalal', 
+            'fozin', 'haneen', 'isra', 'jouri', 'kenda', 'lian', 'miral', 
+            'nejood', 'raheen', 'sherin', 'tara', 'weam', 'yousra', 'zahia'
+        ]
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(arabic_names) + numbers
         if username in banned[0]:
