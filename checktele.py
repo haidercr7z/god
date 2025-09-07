@@ -60,6 +60,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: q_1_a
     if choice == "2":
         c = random.choices(a)
         d = random.choices(a)
@@ -74,6 +75,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: a_b_3
     if choice == "3":
         c = d = random.choices(a)
         d = random.choices(b)
@@ -88,6 +90,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: a111a1
     if choice == "4":
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(e) for i in range(1))))
@@ -110,6 +113,7 @@ def gen_user(choice):
             username = f
         else:
             pass
+        # مثال: a_1a1
     if choice == "5":
         c = random.choices(a)
         d = random.choices(e)
@@ -124,6 +128,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: a111b
     if choice == "6":
         c = random.choices(a)
         d = random.choices(e)
@@ -142,6 +147,7 @@ def gen_user(choice):
             username = username+'bot'
         else:
             pass
+        # مثال: a1bot
     if choice == "7":
         c = random.choices(a)
         d = random.choices(e)
@@ -160,6 +166,7 @@ def gen_user(choice):
             username = username+'bot'
         else:
             pass
+        # مثال: a12bot
     if choice == "8":
         c = random.choices(a)
         d = random.choices(e)
@@ -174,6 +181,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: a1333
     if choice == "9":
         c = d = random.choices(a)
         d = random.choices(a)
@@ -186,6 +194,7 @@ def gen_user(choice):
             f = [c[0], d[0], '_' , d[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
+        # مثال: a_bb
     else:
             pass
     if choice == "10":
@@ -202,6 +211,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: aa_b
     if choice == "11":
         c = d = random.choices(a)
         d = random.choices(b)
@@ -220,6 +230,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
              pass
+        # مثال: aa11aa
     if choice == "12":
         c = d = random.choices(a)
         d = random.choices(a)
@@ -234,6 +245,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: abaaa
     if choice == "13":
         c = d = random.choices(a)
         d = random.choices(a)
@@ -248,6 +260,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: ab_aa
     if choice == "14":
         c = random.choices(a)
         d = random.choices(e)
@@ -262,6 +275,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: aaa1b
     if choice == "15":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -276,6 +290,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: eeww
     if choice == "16":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -290,6 +305,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: ewww
     if choice == "17":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -304,6 +320,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: edxxx
     if choice == "18":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -318,6 +335,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: xxxde
     if choice == "19":
         c = random.choices(aa)
         d = random.choices(aaa)
@@ -332,6 +350,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: waaax
     if choice == "20":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -346,6 +365,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: wddde
     if choice == "21":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -360,6 +380,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: edwww
     if choice == "22":
         c = random.choices(aa)
         d = random.choices(ee)
@@ -374,6 +395,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: wwwde
     if choice == "23":
         c = random.choices(aa)
         d = random.choices(bb)
@@ -388,6 +410,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: wddde
     if choice == "24":
         c = random.choices(e)
         d = random.choices(b)
@@ -402,6 +425,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: 1a1111
     if choice == "25":
         c = random.choices(e)
         d = random.choices(b)
@@ -416,6 +440,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+        # مثال: 1a111
     if choice == "26":
         c = random.choices(a)
         d = random.choices(e)
@@ -434,10 +459,13 @@ def gen_user(choice):
             username = username+'bot'
         else:
             pass
+        # مثال: a12bot
     if choice == "27":
         d1 = random.choice(b)
         d2 = random.choice(b)
         d3 = random.choice(b)
+        d4 = random.choice(b)  # رقم إضافي للنمط الجديد
+        
         f1 = 'vip'+d2+d2+d2
         f2 = 'id'+d1+d3+d3
         f3 = 'ton'+d2+d2+d2
@@ -446,16 +474,20 @@ def gen_user(choice):
         f6 = 'king'+d3+d2
         f7 = 'q'+d1+'q'+d1+'q'
         f8 = 'vip'+d1+d1+d1
-        f9 = 'c'+'x'+d3+'x'+d3
-        f10 = 'xxx'+d2+d3
+        f9 = random.choice(a)+random.choice(a)+d3+random.choice(a)+d3  # حرفين مختلفين + رقم + حرف + رقم
+        f10 = 'xxx'+d2+d3  # xxx + رقم + رقم (مختلفين)
         f11 = 'top'+d2+d2+d3
-        f12 = 'by'+d3+d3+d3
-        f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12]
+        f12 = random.choice(a)+random.choice(a)+d3+d3+d3  # حرفين مختلفين + 3 أرقام متشابهة
+        f13 = random.choice(a)+random.choice(a)+d4+random.choice(a)+random.choice(a)+d4  # ss2ss2 نمط
+        
+        f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
         username = random.choice(f)
         if username in banned[0]:
             d1 = random.choice(b)
             d2 = random.choice(b)
             d3 = random.choice(b)
+            d4 = random.choice(b)
+            
             f1 = 'vip'+d2+d2+d2
             f2 = 'id'+d1+d3+d3
             f3 = 'ton'+d2+d2+d2
@@ -464,14 +496,21 @@ def gen_user(choice):
             f6 = 'king'+d1+d2
             f7 = 'q'+d1+'q'+d3+'q'
             f8 = 'vip'+d1+d1+d1
-            f9 = 'c'+'x'+d3+'x'+d3
+            f9 = random.choice(a)+random.choice(a)+d3+random.choice(a)+d3
             f10 = 'xxx'+d2+d3
             f11 = 'top'+d2+d3+d3
-            f12 = 'by'+d3+d3+d3
-            f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12]
+            f12 = random.choice(a)+random.choice(a)+d3+d3+d3
+            f13 = random.choice(a)+random.choice(a)+d4+random.choice(a)+random.choice(a)+d4
+            
+            f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
             username = random.choice(f)
         else:
             pass
+        # أمثلة: 
+        # f9: ab1c1, xy2z2
+        # f10: xxx12, xxx34
+        # f12: ab111, cd222
+        # f13: ab12cd12, wx34yz34
     if choice == "28":
         c = random.choices(b)
         d = random.choices(b)
@@ -492,6 +531,7 @@ def gen_user(choice):
             username = 'vip'+username
         else:
             pass
+        # مثال: vip1234
     # النوع 29 - تم استبداله بالقائمة الجديدة
     if choice == "29":
         arabic_names = [
@@ -513,6 +553,7 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(arabic_names) + numbers
+        # مثال: Ali12, Hussain34
     
     if choice == "30":
         # نوع: كلمات إنجليزية شائعة
@@ -522,6 +563,7 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(english_words) + numbers
+        # مثال: star12, moon34
     
     if choice == "31":
         # نوع: أسماء حيوانات
@@ -531,6 +573,7 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(animals) + numbers
+        # مثال: lion12, tiger34
     
     if choice == "32":
         # نوع: أسماء بلدان
@@ -540,6 +583,7 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(countries) + numbers
+        # مثال: egypt12, ksa34
     
     if choice == "33":
         # نوع: أسماء مشاهير
@@ -549,6 +593,7 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(celebrities) + numbers
+        # مثال: mess12, ronaldo34
     
     return username
 
