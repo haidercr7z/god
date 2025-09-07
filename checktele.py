@@ -464,53 +464,109 @@ def gen_user(choice):
         d1 = random.choice(b)
         d2 = random.choice(b)
         d3 = random.choice(b)
-        d4 = random.choice(b)  # رقم إضافي للنمط الجديد
+        l1 = random.choice(a)
+        l2 = random.choice(a)
+        same = random.choice(a)  
         
-        f1 = 'vip'+d2+d2+d2
-        f2 = 'id'+d1+d3+d3
-        f3 = 'ton'+d2+d2+d2
-        f4 = 'pro'+d1+d1+d1
-        f5 = 'x'+d1+'x'+d1+'x'
-        f6 = 'king'+d3+d2
-        f7 = 'q'+d1+'q'+d1+'q'
-        f8 = 'vip'+d1+d1+d1
-        f9 = random.choice(a)+random.choice(a)+d3+random.choice(a)+d3  # حرفين مختلفين + رقم + حرف + رقم
-        f10 = 'xxx'+d2+d3  # xxx + رقم + رقم (مختلفين)
-        f11 = 'top'+d2+d2+d3
-        f12 = random.choice(a)+random.choice(a)+d3+d3+d3  # حرفين مختلفين + 3 أرقام متشابهة
-        f13 = random.choice(a)+random.choice(a)+d4+random.choice(a)+random.choice(a)+d4  # ss2ss2 نمط
+        # الأنماط السابقة
+        f1 = 'vip' + d2 + d2 + d2
+        f2 = 'id' + d1 + d3 + d3
+        f3 = 'ton' + d2 + d2 + d2
+        f4 = 'pro' + d1 + d1 + d1
+        f5 = 'x' + d1 + 'x' + d1 + 'x'
+        f6 = 'king' + d3 + d2
+        f7 = 'q' + d1 + 'q' + d1 + 'q'
+        f8 = 'vip' + d1 + d1 + d1
+        f9 = same + same + d1 + same + d2
+        f10 = 'xxx' + d1 + d2
+        f11 = 'top' + d2 + d2 + d3
+        while l2 == l1:
+            l2 = random.choice(a)
+        f12 = l1 + l2 + d3 + d3 + d3
         
-        f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
+        # ✅ f13: سداسي من حرفين فقط (ababab)
+        l3 = random.choice(a)
+        l4 = random.choice(a)
+        while l4 == l3:
+            l4 = random.choice(a)
+        f13 = (l3 + l4) * 3
+        
+        # ✅ f14: سداسي (حرف + رقم) بأنماط مختلفة مثل ss2ss2 أو s2ss2s
+        l5 = random.choice(a)
+        d4 = random.choice(b)
+        patterns_f14 = [
+            l5 + l5 + d4 + l5 + l5 + d4,   # ss2ss2
+            l5 + d4 + l5 + l5 + d4 + l5,   # s2ss2s
+            d4 + l5 + l5 + d4 + l5 + l5    # 2ss2ss
+        ]
+        f14 = random.choice(patterns_f14)
+        
+        # ✅ f15: سباعي (حرف + رقم) بأنماط مشابهة
+        l6 = random.choice(a)
+        d5 = random.choice(b)
+        patterns_f15 = [
+            l6 + l6 + d5 + l6 + l6 + d5 + l6,  # ss2ss2s
+            l6 + d5 + l6 + l6 + d5 + l6 + l6,  # s2ss2ss
+            d5 + l6 + l6 + d5 + l6 + l6 + d5   # 2ss2ss2
+        ]
+        f15 = random.choice(patterns_f15)
+        
+        # القائمة الكاملة
+        f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15]
         username = random.choice(f)
         if username in banned[0]:
             d1 = random.choice(b)
             d2 = random.choice(b)
             d3 = random.choice(b)
+            l1 = random.choice(a)
+            l2 = random.choice(a)
+            same = random.choice(a)
+            
+            f1 = 'vip' + d2 + d2 + d2
+            f2 = 'id' + d1 + d3 + d3
+            f3 = 'ton' + d2 + d2 + d2
+            f4 = 'pro' + d1 + d1 + d1
+            f5 = 'x' + d1 + 'x' + d1 + 'x'
+            f6 = 'king' + d3 + d2
+            f7 = 'q' + d1 + 'q' + d1 + 'q'
+            f8 = 'vip' + d1 + d1 + d1
+            f9 = same + same + d1 + same + d2
+            f10 = 'xxx' + d1 + d2
+            f11 = 'top' + d2 + d2 + d3
+            while l2 == l1:
+                l2 = random.choice(a)
+            f12 = l1 + l2 + d3 + d3 + d3
+            
+            l3 = random.choice(a)
+            l4 = random.choice(a)
+            while l4 == l3:
+                l4 = random.choice(a)
+            f13 = (l3 + l4) * 3
+            
+            l5 = random.choice(a)
             d4 = random.choice(b)
+            patterns_f14 = [
+                l5 + l5 + d4 + l5 + l5 + d4,
+                l5 + d4 + l5 + l5 + d4 + l5,
+                d4 + l5 + l5 + d4 + l5 + l5
+            ]
+            f14 = random.choice(patterns_f14)
             
-            f1 = 'vip'+d2+d2+d2
-            f2 = 'id'+d1+d3+d3
-            f3 = 'ton'+d2+d2+d2
-            f4 = 'pro'+d1+d1+d1
-            f5 = 'x'+d1+'x'+d2+'x'
-            f6 = 'king'+d1+d2
-            f7 = 'q'+d1+'q'+d3+'q'
-            f8 = 'vip'+d1+d1+d1
-            f9 = random.choice(a)+random.choice(a)+d3+random.choice(a)+d3
-            f10 = 'xxx'+d2+d3
-            f11 = 'top'+d2+d3+d3
-            f12 = random.choice(a)+random.choice(a)+d3+d3+d3
-            f13 = random.choice(a)+random.choice(a)+d4+random.choice(a)+random.choice(a)+d4
+            l6 = random.choice(a)
+            d5 = random.choice(b)
+            patterns_f15 = [
+                l6 + l6 + d5 + l6 + l6 + d5 + l6,
+                l6 + d5 + l6 + l6 + d5 + l6 + l6,
+                d5 + l6 + l6 + d5 + l6 + l6 + d5
+            ]
+            f15 = random.choice(patterns_f15)
             
-            f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
+            f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15]
             username = random.choice(f)
-        else:
-            pass
         # أمثلة: 
-        # f9: ab1c1, xy2z2
-        # f10: xxx12, xxx34
-        # f12: ab111, cd222
-        # f13: ab12cd12, wx34yz34
+        # f13: ababab, cdcdcd
+        # f14: ss2ss2, s2ss2s, 2ss2ss
+        # f15: ss2ss2s, s2ss2ss, 2ss2ss2
     if choice == "28":
         c = random.choices(b)
         d = random.choices(b)
