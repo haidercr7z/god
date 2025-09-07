@@ -435,34 +435,34 @@ def gen_user(choice):
         else:
             pass
     if choice == "27":
-        d1 = str(''.join((random.choice(b) for i in range(1))))
-        d2 = str(''.join((random.choice(b) for i in range(1))))
-        d3 = str(''.join((random.choice(b) for i in range(1))))
-        f1 = 'vip'+d2+d2+d2        # طول 6 مثال: vip739
-        f2 = 'id'+d1+d3+d3          # طول 5 مثال: id739
-        f3 = 'ton'+d2+d2+d2         # طول 6 مثال: bet739
-        f4 = 'pro'+d1+d1+d3         # طول 6 مثال: pro739
-        f5 = 'x'+d1+'x'+d1+'x'     # طول 7 مثال: xx739xx
-        f6 = 'king'+d1+d2           # طول 6 مثال: king73
-        f7 = 'q'+d1+'q'+d3+'q'       # طول 6 مثال: q739q
-        f8 = 'vip'+d1+d1+d1        # طول 7 مثال: vip_739
-        f9 = 'h'+'x'+d3+'x'+d3        # طول 7 مثال: hero937
-        f10 = 'xxx'+d2+d3        # طول 7 مثال: xx_739
-        f11 = 'top'+d1+d2+d3        # طول 6 مثال: top739
+        d1 = random.choice(b)
+        d2 = random.choice(b)
+        d3 = random.choice(b)
+        f1 = 'vip'+d2+d2+d2
+        f2 = 'id'+d1+d3+d3
+        f3 = 'ton'+d2+d2+d2
+        f4 = 'pro'+d1+d1+d3
+        f5 = 'x'+d1+'x'+d1+'x'
+        f6 = 'king'+d1+d2
+        f7 = 'q'+d1+'q'+d3+'q'
+        f8 = 'vip'+d1+d1+d1
+        f9 = 'h'+'x'+d3+'x'+d3
+        f10 = 'xxx'+d2+d3
+        f11 = 'top'+d1+d2+d3
         f12 = 'bet'+d3+d3+d3
         f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12]
         username = random.choice(f)
         if username in banned[0]:
-            d1 = str(''.join((random.choice(b) for i in range(1))))
-            d2 = str(''.join((random.choice(b) for i in range(1))))
-            d3 = str(''.join((random.choice(b) for i in range(1))))
+            d1 = random.choice(b)
+            d2 = random.choice(b)
+            d3 = random.choice(b)
             f1 = 'vip'+d2+d2+d2
             f2 = 'id'+d1+d3+d3
             f3 = 'ton'+d2+d2+d2
             f4 = 'pro'+d1+d1+d3
             f5 = 'x'+d1+'x'+d2+'x'
             f6 = 'king'+d1+d2
-            f7 = 'q'+d1+'q'd3+'q'
+            f7 = 'q'+d1+'q'+d3+'q'
             f8 = 'vip'+d1+d1+d1
             f9 = 'h'+'x'+d3+'x'+d3
             f10 = 'xxx'+d2+d3
