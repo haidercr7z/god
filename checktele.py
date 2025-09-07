@@ -294,17 +294,18 @@ def gen_user(choice):
     if choice == "16":
         c = random.choices(aa)
         d = random.choices(ee)
-       極端 s = random.choices(bb)
+        s = random.choices(bb)
         f = [c[0], d[0], s[0], s[0], s[0]]    
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(aa)
             d = random.choices(ee)
             s = random.choices(bb)
-            f = [極端c[0], d[0], s[0], s極端[0], s[0]]    
+            f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
         else:
             pass
+
         # مثال: ewww
     if choice == "17":
         c = random.choices(aa)
@@ -325,7 +326,7 @@ def gen_user(choice):
         c = random.choices(aa)
         d = random.choices(ee)
         s = random.choices(aaa)
-        f極端 = [s[0], s[0], s[0], d[0], c[0]]    
+        f = [s[0], s[0], s[0], d[0], c[0]]    
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(aa)
@@ -346,7 +347,7 @@ def gen_user(choice):
             c = random.choices(aa)
             d = random.choices(aaa)
             s = random.choices(ee)
-            f = [s[極端0], c[0], c[0], c[0], d[0]]    
+            f = [s[0], c[0], c[0], c[0], d[0]]    
             username = ''.join(f)
         else:
             pass
@@ -362,7 +363,7 @@ def gen_user(choice):
             d = random.choices(ee)
             s = random.choices(bb)
             f = [s[0], d[0], d[0], d[0], c[0]]    
-            username極端 = ''.join(f)
+            username = ''.join(f)
         else:
             pass
         # مثال: wddde
@@ -391,7 +392,7 @@ def gen_user(choice):
             c = random.choices(aa)
             d = random.choices(ee)
             s = random.choices(bb)
-            f = [s[0], s[0], s[極端0], d[0], c[0]]    
+            f = [s[0], s[0], s[0], d[0], c[0]]    
             username = ''.join(f)
         else:
             pass
@@ -400,9 +401,9 @@ def gen_user(choice):
         c = random.choices(aa)
         d = random.choices(bb)
         s = random.choices(ee)
-        f = [s[0], d[0], d[0], d[0],極端 c[0]]    
+        f = [s[0], d[0], d[0], d[0], c[0]]    
         username = ''.join(f)
-       極端 if username in banned[0]:
+       if username in banned[0]:
             c = random.choices(aa)
             d = random.choices(bb)
             s = random.choices(ee)
@@ -427,7 +428,7 @@ def gen_user(choice):
             pass
         # مثال: 1a1111
     if choice == "25":
-        c =極端 random.choices(e)
+        c = random.choices(e)
         d = random.choices(b)
         s = random.choices(a)
         f = [c[0], s[0], d[0], d[0], d[0]]    
@@ -473,7 +474,7 @@ def gen_user(choice):
         f3 = 'ton' + d2 + d2 + d2
         f5 = 'x' + d1 + 'x' + d1 + 'x'
         f7 = 'q' + d1 + 'q' + d1 + 'q'
-        f8 = 'vip' + d1 +極端 d1 + d1
+        f8 = 'vip' + d1 + d1 + d1
         
         f9 = same + same + d1 + same + d2
         f10 = 'xxx' + d1 + d2
@@ -495,7 +496,7 @@ def gen_user(choice):
         patterns_f14 = [
             l5 + l5 + d4 + l5 + l5 + d4,   # ss2ss2
             l5 + d4 + l5 + l5 + d4 + l5,   # s2ss2s
-            d4 +極端 l5 + l5 + d4 + l5 + l5    # 2ss2ss
+            d4 + l5 + l5 + d4 + l5 + l5    # 2ss2ss
         ]
         f14 = random.choice(patterns_f14)
         
@@ -503,7 +504,7 @@ def gen_user(choice):
         l6 = random.choice(a)
         d5 = random.choice(b)
         patterns_f15 = [
-            l6 + l6 + d5 + l極端6 + l6 + d5 + l6,  # ss2ss2s
+            l6 + l6 + d5 + l6 + l6 + d5 + l6,  # ss2ss2s
             l6 + d5 + l6 + l6 + d5 + l6 + l6,  # s2ss2ss
             d5 + l6 + l6 + d5 + l6 + l6 + d5   # 2ss2ss2
         ]
@@ -519,8 +520,8 @@ def gen_user(choice):
             l7 + l8 + l8 + l7 + l7,       # xyyxx
             l7 + l8 + l7 + l8 + l7,       # yxyxx
             l7 + c + l8 + l8 + l8,        # xcyyy
-            l8 + l8 + l7 + c +極端 l8,        # yyxcy
-            c + l極端7 + l8 + l8 + l8,        # cxyyy
+            l8 + l8 + l7 + c + l8,        # yyxcy
+            c + l7 + l8 + l8 + l8,        # cxyyy
             "cx" + d1*3,                  # cx111
             d1*3 + "cx"                   # 111cx
         ]
@@ -548,7 +549,7 @@ def gen_user(choice):
             
             while l2 == l1:
                 l2 = random.choice(a)
-            f12 = l1 + l2 + d3 + d極端3 + d3
+            f12 = l1 + l2 + d3 + d3 + d3
             
             l3 = random.choice(a)
             l4 = random.choice(a)
@@ -641,7 +642,7 @@ def gen_user(choice):
     if choice == "30":
         # نوع: كلمات إنجليزية شائعة
         english_words = ['star', 'moon', 'sun', 'sky', 'sea', 'king', 'queen', 'gold', 'love', 'angel']
-        numbers = ''.join(random.choices(b,極端 k=2))
+        numbers = ''.join(random.choices(b, k=2))
         username = random.choice(english_words) + numbers
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
@@ -673,7 +674,7 @@ def gen_user(choice):
         celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(celebrities) + numbers
-       極端 if username in banned極端[0]:
+       if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(celebrities) + numbers
         # مثال: mess12, ronaldo34
@@ -700,7 +701,7 @@ async def _(event):
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
-    if ispay2[0] ==極端 "yes":
+    if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 2)
@@ -713,7 +714,7 @@ async def _(event):
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
-                    await event.edit(f"الصيد وصل لـ({極端trys}) من المحاولات")
+                    await event.edit(f"الصيد وصل لـ({trys}) من المحاولات")
                 elif "off" in isclaim:
                     await event.edit("لايوجد صيد شغال !")
                 else:
@@ -744,7 +745,7 @@ async def _(event):
 ⤷ By : ( @h_d71 )  
     ''')
                     
-                    await event.client.send_file("@h_d71", "https極端://t.me/v_yip/40", caption=f'''
+                    await event.client.send_file("@h_d71", "https://t.me/v_yip/40", caption=f'''
 ⌯ Done caught ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
@@ -782,8 +783,8 @@ async def _(event):
             isauto.append("on")
             msg = ("".join(event.text.split(maxsplit=2)[2:])).split(" ", 2)
             username = str(msg[2])
-            ch =極端 str(msg[1])
-            await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg極端[0]}` من المحاولات !")
+            ch = str(msg[1])
+            await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
             @Tepthon.on極端(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
             async def _(event):
@@ -846,7 +847,7 @@ Channel / @v_yip
 @h_d71
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
-                await event.client.send_message(event.chat_id, f"極端مبند `{username}` ❌❌")
+                await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
             except Exception as eee:
                 await Tepthon.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
