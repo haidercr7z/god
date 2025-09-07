@@ -46,499 +46,185 @@ def check_user(username):
         return "Unavailable"
 
 def gen_user(choice):
+    # النوع 1: دمج النوعين 1 و 2 (حرف_رقم_حرف/رقم)
     if choice == "1":
-        c = random.choices(a)
-        d = random.choices(b)
-        s = random.choices(e)
-        f = [c[0], "_", d[0], "_", s[0]]
-        username = ''.join(f)
+        # مثال: a_1_b
+        chars = random.choices(a, k=2)
+        num_or_char = random.choice([random.choice(b), random.choice(a)])
+        username = f"{chars[0]}_{num_or_char}_{chars[1]}"
         if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(b)
-            s = random.choices(e)
-            f = [c[0], "_", d[0], "_", s[0]]
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "2":
-        c = random.choices(a)
-        d = random.choices(a)
-        s = random.choices(e)
-        f = [c[0], "_", d[0], "_", s[0]]
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(b)
-            s = random.choices(e)
-            f = [c[0], "_", d[0], "_", s[0]]
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "3":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], d[0], d[0], d[0], c[0] ,d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(e)
-            f = [c[0], c[0], d[0], d[0], c[0] ,d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "4":
-        c = str(''.join((random.choice(a) for i in range(1))))
-        d = str(''.join((random.choice(e) for i in range(1))))
-        f1 = c+'_'+d+c+d
-        f2 = c+d+c+'_'+d
-        f3 = c+d+'_'+d+c
-        f4 = c+'_'+d+d+c
-        f = f1,f2,f3,f4
-        f = random.choice(f)
-        username = f
-        if username in banned[0]:
-            c = str(''.join((random.choice(a) for i in range(1))))
-            d = str(''.join((random.choice(e) for i in range(1))))
-            f1 = c+'_'+d+c+d
-            f2 = c+d+c+'_'+d
-            f3 = c+d+'_'+d+c
-            f4 = c+'_'+d+d+c
-            f = f1,f2,f3,f4
-            f = random.choice(f)
-            username = f
-        else:
-            pass
-    if choice == "5":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], s[0], s[0], s[0], d[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(a)
-            s = random.choices(e)
-            f = [c[0], s[0], s[0], s[0], d[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "6":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], s[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        username = username+'bot'
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(a)
-            s = random.choices(e)
-            f = [c[0], s[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-            username = username+'bot'
-        else:
-            pass
-    if choice == "7":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], s[0], d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        username = username+'bot'
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(a)
-            s = random.choices(e)
-            f = [c[0], s[0], d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-            username = username+'bot'
-        else:
-            pass
-    if choice == "8":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], d[0], s[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(a)
-            s = random.choices(e)
-            f = [c[0], d[0], s[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "9":
-        c = d = random.choices(a)
-        d = random.choices(a)
-        f = [c[0], d[0], '_' , d[0], d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(e)
-            f = [c[0], d[0], '_' , d[0], d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-    else:
-            pass
-    if choice == "10":
-        c = d = random.choices(a)
-        d = random.choices(a)
-        f = [c[0], d[0], c[0] , '_' , d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(b)
-            f = [c[0], d[0], c[0] , '_' , d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "11":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], c[0], d[0], d[0], c[0] , c[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(a)
-            f = [c[0], c[0], d[0], c[0], d[0] ,d[0]]
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(e)
-            f = [c[0], c[0], d[0], d[0], c[0] , c[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-        else:
-             pass
-    if choice == "12":
-        c = d = random.choices(a)
-        d = random.choices(a)
-        f = [c[0], d[0], c[0], c[0], c[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(b)
-            f = [c[0], d[0], c[0], c[0], c[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "13":
-        c = d = random.choices(a)
-        d = random.choices(a)
-        f =  [c[0], d[0],  '_' , c[0], c[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(b)
-            f =  [c[0], d[0],  '_' , c[0], c[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "14":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
-        f = [c[0], c[0], c[0], s[0], d[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(e)
-            f = [c[0], c[0], c[0], d[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "15":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(bb)
-        f = [c[0], c[0], d[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(bb)
-            f = [c[0], c[0], d[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "16":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(bb)
-        f = [c[0], d[0], s[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(bb)
-            f = [c[0], d[0], s[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "17":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(aaa)
-        f = [c[0], d[0], s[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(aaa)
-            f = [c[0], d[0], s[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "18":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(aaa)
-        f = [s[0], s[0], s[0], d[0], c[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(aaa)
-            f = [s[0], s[0], s[0], d[0], c[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "19":
-        c = random.choices(aa)
-        d = random.choices(aaa)
-        s = random.choices(ee)
-        f = [s[0], c[0], c[0], c[0], d[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(aaa)
-            s = random.choices(ee)
-            f = [s[0], c[0], c[0], c[0], d[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "20":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(bb)
-        f = [s[0], d[0], d[0], d[0], c[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(bb)
-            f = [s[0], d[0], d[0], d[0], c[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "21":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(bb)
-        f = [c[0], d[0], s[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(bb)
-            f = [c[0], d[0], s[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "22":
-        c = random.choices(aa)
-        d = random.choices(ee)
-        s = random.choices(bb)
-        f = [s[0], s[0], s[0], d[0], c[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(ee)
-            s = random.choices(bb)
-            f = [s[0], s[0], s[0], d[0], c[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "23":
-        c = random.choices(aa)
-        d = random.choices(bb)
-        s = random.choices(ee)
-        f = [s[0], d[0], d[0], d[0], c[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(aa)
-            d = random.choices(bb)
-            s = random.choices(ee)
-            f = [s[0], d[0], d[0], d[0], c[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "24":
-        c = random.choices(e)
-        d = random.choices(b)
-        s = random.choices(a)
-        f = [c[0], s[0], d[0], d[0], d[0] , d[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(e)
-            d = random.choices(b)
-            s = random.choices(a)
-            f = [c[0], s[0], d[0], d[0], d[0] , d[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "25":
-        c = random.choices(e)
-        d = random.choices(b)
-        s = random.choices(a)
-        f = [c[0], s[0], d[0], d[0], d[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(e)
-            d = random.choices(b)
-            s = random.choices(a)
-            f = [c[0], s[0], d[0], d[0], d[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "26":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], s[0], d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        username = username+'bot'
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(a)
-            s = random.choices(e)
-            f = [c[0], s[0], d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-            username = username+'bot'
-        else:
-            pass
-    if choice == "27":
-        d1 = str(''.join((random.choice(b) for i in range(1))))
-        d2 = str(''.join((random.choice(b) for i in range(1))))
-        d3 = str(''.join((random.choice(b) for i in range(1))))
-        f1 = 'vip'+d2+d2+d3        # طول 6 مثال: vip739
-        f2 = 'id'+d1+d2+d3          # طول 5 مثال: id739
-        f3 = 'bet'+d1+d2+d2         # طول 6 مثال: bet739
-        f4 = 'pro'+d1+d1+d3         # طول 6 مثال: pro739
-        f5 = 'x'+d1+d2+d1+'x'     # طول 7 مثال: xx739xx
-        f6 = 'king'+d1+d2           # طول 6 مثال: king73
-        f7 = 'q'+d1+d3+d3+'q'       # طول 6 مثال: q739q
-        f8 = 'vip_'+d1+d2+d3        # طول 7 مثال: vip_739
-        f9 = 'hero'+d3+d3        # طول 7 مثال: hero937
-        f10 = 'xx_'+d2+d3        # طول 7 مثال: xx_739
-        f11 = 'top'+d1+d2+d3        # طول 6 مثال: top739
-        f12 = 'pro_'+d1+d2          # طول 6 مثال: pro_73
-        f13 = 'bet'+d3+d2+d3
-        f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
-        username = random.choice(f)
-        if username in banned[0]:
-            d1 = str(''.join((random.choice(b) for i in range(1))))
-            d2 = str(''.join((random.choice(b) for i in range(1))))
-            d3 = str(''.join((random.choice(b) for i in range(1))))
-            f1 = 'vip'+d2+d2+d3
-            f2 = 'id'+d1+d2+d3
-            f3 = 'bet'+d1+d2+d2
-            f4 = 'pro'+d1+d1+d3
-            f5 = 'x'+d1+d2+d1+'x'
-            f6 = 'king'+d1+d2
-            f7 = 'q'+d1+d3+d3+'q'
-            f8 = 'vip_'+d1+d2+d3
-            f9 = 'hero'+d3+d3
-            f10 = 'xx_'+d2+d3
-            f11 = 'top'+d1+d2+d3
-            f12 = 'pro_'+d1+d2
-            f13 = 'bet'+d3+d2+d3
-            f = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13]
-            username = random.choice(f)
-        else:
-            pass
-    if choice == "28":
-        c = random.choices(b)
-        d = random.choices(b)
-        s = random.choices(b)
-        k = random.choices(b)
-        f = [c[0], d[0], s[0],k[0]]
-        random.shuffle(f)
-        username = ''.join(f)
-        username = 'vip'+username
-        if username in banned[0]:
-            c = random.choices(b)
-            d = random.choices(b)
-            s = random.choices(b)
-            k = random.choices(b)
-            f = [c[0], d[0], s[0],k[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-            username = 'vip'+username
-        else:
-            pass
-    # الأنواع الجديدة 29-33
-    if choice == "29":
-        # نوع: أسماء عربية شائعة
-        arabic_names = [
-            'ali', 'omar', 'ahmed', 'mohamed', 'mahmoud', 'khaled', 'hassan', 
-            'hussain', 'yousef', 'ibrahim', 'mustafa', 'fadi', 'sami', 'tariq', 
-            'samir', 'nabil', 'raed', 'jamal', 'bilal', 'fares', 'ghassan', 
-            'zayd', 'amir', 'nader', 'reda', 'waleed', 'karim', 'salim', 
-            'hakim', 'mounir', 'adel', 'firas', 'yazan', 'rami', 'anas', 
-            'laith', 'qasem', 'mohsen', 'bashar', 'hadi', 'ayman', 'saif', 
-            'mohannad', 'yahya', 'mazen', 'kamel', 'samih', 'tamer', 'bader', 
-            'farid', 'ahsan', 'younis', 'raihan', 'malik', 'ismail', 'zain', 
-            'rayan', 'nashit', 'taha', 'jawad', 'ameer', 'khalil', 'nadim', 
-            'qais', 'fahad', 'yasir', 'aziz', 'mohit', 'saleh', 'rashid', 
-            'hameed', 'muhsin', 'fahmi', 'yaman', 'kareem', 'tawfiq', 'nasir', 
-            'raouf', 'sufyan', 'fayez', 'zaki', 'abdul', 'samad', 'maher', 
-            'ammar', 'hisham', 'adil', 'nizar', 'qadir', 'ghazi', 'hamza', 
-            'ayoub', 'riad', 'saeed', 'tareq', 'wael', 'zaid', 'yasser', 
-            'jamil', 'basil', 'emad', 'fikri', 'hani', 'jaber', 'kamal', 
-            'lubna', 'majid', 'nasser', 'osama', 'qasim', 'rafiq', 'salam', 
-            'talal', 'wassim', 'yahia', 'zaher', 'ashraf', 'badr', 'dari', 
-            'essam', 'fadel', 'gamil', 'hareth', 'imad', 'joud', 'khalid', 
-            'lotfi', 'mamoun', 'najeeb', 'othman', 'pascal', 'rakan', 'sabri', 
-            'tawfik', 'wajdi', 'yacoub', 'zuhair', 'adnan', 'bashir', 'dalia', 
-            'faisal', 'hadeel', 'issam', 'johar', 'kinda', 'leena', 'mouna', 
-            'nadia', 'omar', 'pasha', 'raja', 'sahar', 'taher', 'waleed', 
-            'yara', 'zaina', 'abood', 'bassam', 'dana', 'fahd', 'hala', 
-            'iraq', 'jana', 'karma', 'lina', 'maha', 'noor', 'ola', 'rami', 
-            'sana', 'tariq', 'waad', 'yara', 'zoya', 'amal', 'baraa', 'diana', 
-            'farah', 'hana', 'iman', 'juman', 'kawthar', 'layal', 'marwa', 
-            'nada', 'omar', 'raghad', 'sally', 'tala', 'wafa', 'yumna', 
-            'zahra', 'alaa', 'budoor', 'dunya', 'faten', 'hoor', 'ivon', 
-            'jory', 'kholoud', 'lama', 'mai', 'nour', 'rabab', 'sama', 
-            'tulin', 'wijdan', 'yasmin', 'zakia', 'abrar', 'bayaan', 'dalal', 
-            'fozin', 'haneen', 'isra', 'jouri', 'kenda', 'lian', 'miral', 
-            'nejood', 'raheen', 'sherin', 'tara', 'weam', 'yousra', 'zahia'
+            chars = random.choices(a, k=2)
+            num_or_char = random.choice([random.choice(b), random.choice(a)])
+            username = f"{chars[0]}_{num_or_char}_{chars[1]}"
+    
+    # النوع 2: دمج النوعين 4 و 10 (أنماط مختلفة من الحروف والأرقام مع شرطة)
+    elif choice == "2":
+        # مثال: a_bc1 أو ab_c1
+        patterns = [
+            f"{random.choice(a)}_{random.choice(e)}{random.choice(e)}{random.choice(b)}",
+            f"{random.choice(a)}{random.choice(e)}_{random.choice(e)}{random.choice(b)}",
+            f"{random.choice(a)}{random.choice(e)}{random.choice(e)}_{random.choice(b)}"
         ]
+        username = random.choice(patterns)
+        if username in banned[0]:
+            patterns = [
+                f"{random.choice(a)}_{random.choice(e)}{random.choice(e)}{random.choice(b)}",
+                f"{random.choice(a)}{random.choice(e)}_{random.choice(e)}{random.choice(b)}",
+                f"{random.choice(a)}{random.choice(e)}{random.choice(e)}_{random.choice(b)}"
+            ]
+            username = random.choice(patterns)
+    
+    # النوع 3: دمج النوعين 3 و 11 (أنماط مختلطة من الحروف والأرقام)
+    elif choice == "3":
+        # مثال: a11aa أو aa11a
+        pattern_type = random.randint(1, 2)
+        if pattern_type == 1:
+            # نمط: حرف + رقم + رقم + حرف + حرف
+            username = f"{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(a)}{random.choice(a)}"
+        else:
+            # نمط: حرف + حرف + رقم + رقم + حرف
+            username = f"{random.choice(a)}{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(a)}"
+        
+        if username in banned[0]:
+            if pattern_type == 1:
+                username = f"{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(a)}{random.choice(a)}"
+            else:
+                username = f"{random.choice(a)}{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(a)}"
+    
+    # النوع 4: دمج الأنواع 5، 14، 15، 16، 17، 18، 19، 20، 21، 22، 23 (أنماط متنوعة)
+    elif choice == "4":
+        patterns = [
+            # النمط 5: حرف + حرف/رقم + حرف/رقم + حرف/رقم + حرف
+            f"{random.choice(a)}{random.choice(e)}{random.choice(e)}{random.choice(e)}{random.choice(a)}",
+            
+            # النمط 14: حرف + حرف + حرف + رقم + حرف/رقم
+            f"{random.choice(a)}{random.choice(a)}{random.choice(a)}{random.choice(b)}{random.choice(e)}",
+            
+            # النمط 15-23: أنماط مختلفة باستخدام مجموعات الحروف المحددة
+            f"{random.choice(aa)}{random.choice(aa)}{random.choice(ee)}{random.choice(bb)}{random.choice(bb)}",
+            f"{random.choice(aa)}{random.choice(ee)}{random.choice(bb)}{random.choice(bb)}{random.choice(bb)}",
+            f"{random.choice(aa)}{random.choice(ee)}{random.choice(aaa)}{random.choice(aaa)}{random.choice(aaa)}",
+            f"{random.choice(aaa)}{random.choice(aaa)}{random.choice(aaa)}{random.choice(ee)}{random.choice(aa)}",
+            f"{random.choice(ee)}{random.choice(aa)}{random.choice(aa)}{random.choice(aa)}{random.choice(aaa)}",
+            f"{random.choice(bb)}{random.choice(ee)}{random.choice(ee)}{random.choice(ee)}{random.choice(aa)}",
+            f"{random.choice(aa)}{random.choice(ee)}{random.choice(bb)}{random.choice(bb)}{random.choice(bb)}",
+            f"{random.choice(bb)}{random.choice(bb)}{random.choice(bb)}{random.choice(ee)}{random.choice(aa)}",
+            f"{random.choice(bb)}{random.choice(bb)}{random.choice(ee)}{random.choice(ee)}{random.choice(ee)}"
+        ]
+        username = random.choice(patterns)
+        if username in banned[0]:
+            username = random.choice(patterns)
+    
+    # النوع 5: النوع 6 (حرف + حرف/رقم + bot)
+    elif choice == "5":
+        # مثال: abbot
+        username = f"{random.choice(a)}{random.choice(e)}bot"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(e)}bot"
+    
+    # النوع 6: النوع 7 (حرف + حرف/رقم + حرف/رقم + bot)
+    elif choice == "6":
+        # مثال: ab1bot
+        username = f"{random.choice(a)}{random.choice(e)}{random.choice(e)}bot"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(e)}{random.choice(e)}bot"
+    
+    # النوع 7: النوع 8 (حرف + حرف/رقم + حرف/رقم + حرف/رقم + حرف/رقم)
+    elif choice == "7":
+        # مثال: a1234
+        username = f"{random.choice(a)}{random.choice(e)}{random.choice(e)}{random.choice(e)}{random.choice(e)}"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(e)}{random.choice(e)}{random.choice(e)}{random.choice(e)}"
+    
+    # النوع 8: النوع 9 (حرف + حرف + _ + حرف + حرف)
+    elif choice == "8":
+        # مثال: aa_bb
+        username = f"{random.choice(a)}{random.choice(a)}_{random.choice(a)}{random.choice(a)}"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(a)}_{random.choice(a)}{random.choice(a)}"
+    
+    # النوع 9: النوع 12 (حرف + حرف + حرف + حرف + حرف)
+    elif choice == "9":
+        # مثال: aaaaa
+        username = f"{random.choice(a)}{random.choice(a)}{random.choice(a)}{random.choice(a)}{random.choice(a)}"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(a)}{random.choice(a)}{random.choice(a)}{random.choice(a)}"
+    
+    # النوع 10: النوع 13 (حرف + حرف + _ + حرف + حرف)
+    elif choice == "10":
+        # مثال: ab_cc
+        username = f"{random.choice(a)}{random.choice(a)}_{random.choice(a)}{random.choice(a)}"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(a)}_{random.choice(a)}{random.choice(a)}"
+    
+    # النوع 11: النوع 24 (حرف/رقم + حرف + رقم + رقم + رقم + رقم)
+    elif choice == "11":
+        # مثال: a19999
+        username = f"{random.choice(e)}{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(b)}{random.choice(b)}"
+        if username in banned[0]:
+            username = f"{random.choice(e)}{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(b)}{random.choice(b)}"
+    
+    # النوع 12: النوع 25 (حرف/رقم + حرف + رقم + رقم + رقم)
+    elif choice == "12":
+        # مثال: a1999
+        username = f"{random.choice(e)}{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(b)}"
+        if username in banned[0]:
+            username = f"{random.choice(e)}{random.choice(a)}{random.choice(b)}{random.choice(b)}{random.choice(b)}"
+    
+    # النوع 13: النوع 26 (حرف + حرف/رقم + حرف/رقم + bot)
+    elif choice == "13":
+        # مثال: a1bbot
+        username = f"{random.choice(a)}{random.choice(e)}{random.choice(e)}bot"
+        if username in banned[0]:
+            username = f"{random.choice(a)}{random.choice(e)}{random.choice(e)}bot"
+    
+    # النوع 14: النوع 27 (كلمات شائعة مع أرقام)
+    elif choice == "14":
+        # مثال: vip739 أو id739
+        d1 = random.choice(b)
+        d2 = random.choice(b)
+        d3 = random.choice(b)
+        patterns = [
+            f"vip{d2}{d2}{d3}",      # طول 6 مثال: vip739
+            f"id{d1}{d2}{d3}",        # طول 5 مثال: id739
+            f"bet{d1}{d2}{d2}",       # طول 6 مثال: bet739
+            f"pro{d1}{d1}{d3}",       # طول 6 مثال: pro739
+            f"x{d1}{d2}{d1}x",        # طول 7 مثال: x739x
+            f"king{d1}{d2}",          # طول 6 مثال: king73
+            f"q{d1}{d3}{d3}q",        # طول 6 مثال: q739q
+            f"vip_{d1}{d2}{d3}",      # طول 7 مثال: vip_739
+            f"hero{d3}{d3}",          # طول 7 مثال: hero97
+            f"xx_{d2}{d3}",           # طول 7 مثال: xx_739
+            f"top{d1}{d2}{d3}",       # طول 6 مثال: top739
+            f"pro_{d1}{d2}",          # طول 6 مثال: pro_73
+            f"bet{d3}{d2}{d3}"        # طول 6 مثال: bet937
+        ]
+        username = random.choice(patterns)
+        if username in banned[0]:
+            username = random.choice(patterns)
+    
+    # النوع 15: النوع 28 (vip + 4 أرقام عشوائية)
+    elif choice == "15":
+        # مثال: vip1234
+        numbers = ''.join(random.choices(b, k=4))
+        username = f"vip{numbers}"
+        if username in banned[0]:
+            numbers = ''.join(random.choices(b, k=4))
+            username = f"vip{numbers}"
+    
+    # النوع 16: أسماء عربية شائعة + أرقام (النوع 29)
+    elif choice == "16":
+        # مثال: ali12
+        arabic_names = ['ali', 'omar', 'ahmed', 'mohamed', 'mahmoud', 'khaled', 'hassan', 'hussain']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(arabic_names) + numbers
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(arabic_names) + numbers
     
-    if choice == "30":
-        # نوع: كلمات إنجليزية شائعة
+    # النوع 17: كلمات إنجليزية شائعة + أرقام (النوع 30)
+    elif choice == "17":
+        # مثال: star12
         english_words = ['star', 'moon', 'sun', 'sky', 'sea', 'king', 'queen', 'gold', 'love', 'angel']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(english_words) + numbers
@@ -546,8 +232,9 @@ def gen_user(choice):
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(english_words) + numbers
     
-    if choice == "31":
-        # نوع: أسماء حيوانات
+    # النوع 18: أسماء حيوانات + أرقام (النوع 31)
+    elif choice == "18":
+        # مثال: lion12
         animals = ['lion', 'tiger', 'eagle', 'wolf', 'fox', 'bear', 'shark', 'snake', 'horse', 'cat']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(animals) + numbers
@@ -555,8 +242,9 @@ def gen_user(choice):
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(animals) + numbers
     
-    if choice == "32":
-        # نوع: أسماء بلدان
+    # النوع 19: أسماء بلدان + أرقام (النوع 32)
+    elif choice == "19":
+        # مثال: egypt12
         countries = ['egypt', 'ksa', 'uae', 'qatar', 'oman', 'iraq', 'jordan', 'lebanon', 'morocco', 'tunisia']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(countries) + numbers
@@ -564,8 +252,9 @@ def gen_user(choice):
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(countries) + numbers
     
-    if choice == "33":
-        # نوع: أسماء مشاهير
+    # النوع 20: أسماء مشاهير + أرقام (النوع 33)
+    elif choice == "20":
+        # مثال: mess12
         celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie']
         numbers = ''.join(random.choices(b, k=2))
         username = random.choice(celebrities) + numbers
