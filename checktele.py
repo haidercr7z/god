@@ -63,7 +63,6 @@ def gen_user(choice):
             s = random.choices(e)
             f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
-        # مثال: q_1_a
         
     elif choice == "2":
         c = random.choices(a)
@@ -77,7 +76,6 @@ def gen_user(choice):
             s = random.choices(e)
             f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
-        # مثال: a_b_3
         
     elif choice == "3":
         c = random.choices(a)
@@ -91,7 +89,6 @@ def gen_user(choice):
             f = [c[0], c[0], d[0], d[0], c[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
-        # مثال: a111a1
         
     elif choice == "4":
         c = str(''.join((random.choice(a) for i in range(1))))
@@ -111,7 +108,6 @@ def gen_user(choice):
             f4 = c+'_'+d+d+c
             f = [f1, f2, f3, f4]
             username = random.choice(f)
-        # مثال: a_1a1
         
     elif choice == "5":
         c = random.choices(a)
@@ -125,7 +121,6 @@ def gen_user(choice):
             s = random.choices(e)
             f = [c[0], s[0], s[0], s[0], d[0]]    
             username = ''.join(f)
-        # مثال: a111b
         
     elif choice == "6":
         c = random.choices(a)
@@ -143,7 +138,6 @@ def gen_user(choice):
             random.shuffle(f)
             username = ''.join(f)
             username = username+'bot'
-        # مثال: a1bot
         
     elif choice == "7":
         c = random.choices(a)
@@ -161,7 +155,6 @@ def gen_user(choice):
             random.shuffle(f)
             username = ''.join(f)
             username = username+'bot'
-        # مثال: a12bot
         
     elif choice == "8":
         c = random.choices(a)
@@ -175,7 +168,6 @@ def gen_user(choice):
             s = random.choices(e)
             f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
-        # مثال: a1333
         
     elif choice == "9":
         c = random.choices(a)
@@ -189,7 +181,6 @@ def gen_user(choice):
             f = [c[0], d[0], '_', d[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
-        # مثال: a_bb
         
     elif choice == "10":
         c = random.choices(a)
@@ -203,7 +194,6 @@ def gen_user(choice):
             f = [c[0], d[0], c[0], '_', d[0]]
             random.shuffle(f)
             username = ''.join(f)
-        # مثال: aa_b
         
     elif choice == "11":
         c = random.choices(a)
@@ -217,7 +207,6 @@ def gen_user(choice):
             f = [c[0], c[0], d[0], c[0], d[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
-        # مثال: aa11aa
         
     elif choice == "12":
         c = random.choices(a)
@@ -231,7 +220,6 @@ def gen_user(choice):
             f = [c[0], d[0], c[0], c[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
-        # مثال: abaaa
         
     elif choice == "13":
         c = random.choices(a)
@@ -245,7 +233,6 @@ def gen_user(choice):
             f = [c[0], d[0], '_', c[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
-        # مثال: ab_aa
         
     elif choice == "14":
         c = random.choices(a)
@@ -259,7 +246,6 @@ def gen_user(choice):
             s = random.choices(e)
             f = [c[0], c[0], c[0], d[0], s[0]]    
             username = ''.join(f)
-        # مثال: aaa1b
         
     elif choice == "15":
         c = random.choices(aa)
@@ -273,7 +259,6 @@ def gen_user(choice):
             s = random.choices(bb)
             f = [c[0], c[0], d[0], s[0], s[0]]    
             username = ''.join(f)
-        # مثال: eeww
         
     elif choice == "16":
         c = random.choices(aa)
@@ -287,7 +272,6 @@ def gen_user(choice):
             s = random.choices(bb)
             f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
-        # مثال: ewww
         
     elif choice == "17":
         c = random.choices(aa)
@@ -301,7 +285,6 @@ def gen_user(choice):
             s = random.choices(aaa)
             f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
-        # مثال: edxxx
         
     elif choice == "18":
         c = random.choices(aa)
@@ -315,7 +298,6 @@ def gen_user(choice):
             s = random.choices(aaa)
             f = [s[0], s[0], s[0], d[0], c[0]]    
             username = ''.join(f)
-        # مثال: xxxde
         
     elif choice == "19":
         c = random.choices(aa)
@@ -329,7 +311,6 @@ def gen_user(choice):
             s = random.choices(ee)
             f = [s[0], c[0], c[0], c[0], d[0]]    
             username = ''.join(f)
-        # مثال: waaax
         
     elif choice == "20":
         c = random.choices(aa)
@@ -343,7 +324,6 @@ def gen_user(choice):
             s = random.choices(bb)
             f = [s[0], d[0], d[0], d[0], c[0]]    
             username = ''.join(f)
-        # مثال: wddde
         
     elif choice == "21":
         c = random.choices(aa)
@@ -357,7 +337,6 @@ def gen_user(choice):
             s = random.choices(bb)
             f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
-        # مثال: edwww
         
     elif choice == "22":
         c = random.choices(aa)
@@ -371,7 +350,6 @@ def gen_user(choice):
             s = random.choices(bb)
             f = [s[0], s[0], s[0], d[0], c[0]]    
             username = ''.join(f)
-        # مثال: wwwde
         
     elif choice == "23":
         c = random.choices(aa)
@@ -385,7 +363,6 @@ def gen_user(choice):
             s = random.choices(ee)
             f = [s[0], d[0], d[0], d[0], c[0]]    
             username = ''.join(f)
-        # مثال: wddde
         
     elif choice == "24":
         c = random.choices(e)
@@ -399,7 +376,6 @@ def gen_user(choice):
             s = random.choices(a)
             f = [c[0], s[0], d[0], d[0], d[0], d[0]]    
             username = ''.join(f)
-        # مثال: 1a1111
         
     elif choice == "25":
         c = random.choices(e)
@@ -413,7 +389,6 @@ def gen_user(choice):
             s = random.choices(a)
             f = [c[0], s[0], d[0], d[0], d[0]]    
             username = ''.join(f)
-        # مثال: 1a111
         
     elif choice == "26":
         c = random.choices(a)
@@ -431,7 +406,6 @@ def gen_user(choice):
             random.shuffle(f)
             username = ''.join(f)
             username = username+'bot'
-        # مثال: a12bot
         
     elif choice == "27":
         d1 = random.choice(b)
@@ -441,7 +415,6 @@ def gen_user(choice):
         l2 = random.choice(a)
         same = random.choice(a)  
         
-        # الأنماط القديمة
         f2 = 'id' + d1 + d3 + d3
         f3 = 'ton' + d2 + d2 + d2
         f5 = 'x' + d1 + 'x' + d1 + 'x'
@@ -455,51 +428,46 @@ def gen_user(choice):
             l2 = random.choice(a)
         f12 = l1 + l2 + d3 + d3 + d3
         
-        # f13: سداسي من حرفين فقط
         l3 = random.choice(a)
         l4 = random.choice(a)
         while l4 == l3:
             l4 = random.choice(a)
         f13 = (l3 + l4) * 3
         
-        # f14: سداسي (حرف + رقم) بأنماط مختلفة
         l5 = random.choice(a)
         d4 = random.choice(b)
         patterns_f14 = [
-            l5 + l5 + d4 + l5 + l5 + d4,   # ss2ss2
-            l5 + d4 + l5 + l5 + d4 + l5,   # s2ss2s
-            d4 + l5 + l5 + d4 + l5 + l5    # 2ss2ss
+            l5 + l5 + d4 + l5 + l5 + d4,
+            l5 + d4 + l5 + l5 + d4 + l5,
+            d4 + l5 + l5 + d4 + l5 + l5
         ]
         f14 = random.choice(patterns_f14)
         
-        # f15: سباعي (حرف + رقم) بأنماط مشابهة
         l6 = random.choice(a)
         d5 = random.choice(b)
         patterns_f15 = [
-            l6 + l6 + d5 + l6 + l6 + d5 + l6,  # ss2ss2s
-            l6 + d5 + l6 + l6 + d5 + l6 + l6,  # s2ss2ss
-            d5 + l6 + l6 + d5 + l6 + l6 + d5   # 2ss2ss2
+            l6 + l6 + d5 + l6 + l6 + d5 + l6,
+            l6 + d5 + l6 + l6 + d5 + l6 + l6,
+            d5 + l6 + l6 + d5 + l6 + l6 + d5
         ]
         f15 = random.choice(patterns_f15)
         
-        # الأنماط الجديدة
         l7 = random.choice(a)
         l8 = random.choice(a)
         c_char = random.choice(a)  
         new_patterns = [
-            l7 + l7 + l8 + l8 + l8,       # xxyyy
-            l8 + l8 + l8 + l7 + l7,       # yyyxx
-            l7 + l8 + l8 + l7 + l7,       # xyyxx
-            l7 + l8 + l7 + l8 + l7,       # yxyxx
-            l7 + c_char + l8 + l8 + l8,   # xcyyy
-            l8 + l8 + l7 + c_char + l8,   # yyxcy
-            c_char + l7 + l8 + l8 + l8,   # cxyyy
-            "cx" + d1*3,                  # cx111
-            d1*3 + "cx"                   # 111cx
+            l7 + l7 + l8 + l8 + l8,
+            l8 + l8 + l8 + l7 + l7,
+            l7 + l8 + l8 + l7 + l7,
+            l7 + l8 + l7 + l8 + l7,
+            l7 + c_char + l8 + l8 + l8,
+            l8 + l8 + l7 + c_char + l8,
+            c_char + l7 + l8 + l8 + l8,
+            "cx" + d1*3,
+            d1*3 + "cx"
         ]
         f_new = random.choice(new_patterns)
         
-        # القائمة الكاملة
         f = [f2, f3, f5, f7, f8, f9, f10, f12, f13, f14, f15, f_new]
         username = random.choice(f)
         if username in banned[0]:
@@ -565,7 +533,6 @@ def gen_user(choice):
             
             f = [f2, f3, f5, f7, f8, f9, f10, f12, f13, f14, f15, f_new]
             username = random.choice(f)
-        # أمثلة: xxyyy, yyyxx, xyyxx, yxyxx, xcyyy, yyxcy, cxyyy, cx111, 111cx
         
     elif choice == "28":
         c = random.choices(b)
@@ -585,7 +552,6 @@ def gen_user(choice):
             random.shuffle(f)
             username = ''.join(f)
             username = 'vip'+username
-        # مثال: vip1234
         
     elif choice == "29":
         arabic_names = [
@@ -607,7 +573,6 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(arabic_names) + numbers
-        # مثال: Ali12, Hussain34
     
     elif choice == "30":
         english_words = ['star', 'moon', 'sun', 'sky', 'sea', 'king', 'queen', 'gold', 'love', 'angel']
@@ -616,7 +581,6 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(english_words) + numbers
-        # مثال: star12, moon34
     
     elif choice == "31":
         animals = ['lion', 'tiger', 'eagle', 'wolf', 'fox', 'bear', 'shark', 'snake', 'horse', 'cat']
@@ -625,7 +589,6 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(animals) + numbers
-        # مثال: lion12, tiger34
     
     elif choice == "32":
         countries = ['egypt', 'ksa', 'uae', 'qatar', 'oman', 'iraq', 'jordan', 'lebanon', 'morocco', 'tunisia']
@@ -634,7 +597,6 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(countries) + numbers
-        # مثال: egypt12, ksa34
     
     elif choice == "33":
         celebrities = ['mess', 'ronaldo', 'elon', 'bill', 'mark', 'jack', 'obama', 'trump', 'putin', 'kylie']
@@ -643,7 +605,37 @@ def gen_user(choice):
         if username in banned[0]:
             numbers = ''.join(random.choices(b, k=2))
             username = random.choice(celebrities) + numbers
-        # مثال: mess12, ronaldo34
+
+    elif choice == "50":
+        l1 = random.choice(a)
+        l2 = random.choice(a)
+        l3 = random.choice(a)
+        c = random.choice(a)
+        d1 = random.choice(b)
+        d2 = random.choice(b)
+        g = "g"
+        v = "v"
+        
+        patterns_50 = [
+            l1 + l1 + l2 + l1 + l2,
+            l1 + l2 + l1 + l1 + l2,
+            l2 + l1 + l2 + l1 + l1,
+            l1 + l1 + d1 + l1 + d1,
+            l1 + d1 + l1 + l1 + d1,
+            d1 + l1 + d1 + l1 + l1,
+            l1*4 + d1 + l1*3,
+            l1*3 + l2 + l1*4,
+            c + l1 + l1 + c + l1,
+            l1 + l1 + d1*3,
+            d1*3 + l1 + l1,
+            g + g + l1*3,
+            c + v + l1*3,
+            l1 + l1 + "2004"
+        ]
+        
+        username = random.choice(patterns_50)
+        if username in banned[0]:
+            username = random.choice(patterns_50)
     
     return username
 
@@ -682,8 +674,6 @@ async def _(event):
                     await event.edit("لايوجد صيد شغال !")
                 else:
                     await event.edit("خطأ")
-            else:
-                pass
         
         for i in range(int(msg[0])):
             if ispay2[0] == 'no':
@@ -811,9 +801,8 @@ Channel / @v_yip
     الخطأ :
     {str(eee)}''')
 
-# تشغيل الثريدات
 Threads = [] 
-for t in range(100):  # قللنا العدد ليكون أكثر كفاءة
+for t in range(10):
     x = threading.Thread(target=gen_user, args=("1",))
     x.start()
     Threads.append(x)
