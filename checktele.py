@@ -508,7 +508,7 @@ def gen_user(choice):
             l6 + d5 + l6 + l6 + d5 + l6 + l6,  # s2ss2ss
             d5 + l6 + l6 + d5 + l6 + l6 + d5   # 2ss2ss2
         ]
-        f15 = random.choice(patterns極端_f15)
+        f15 = random.choice(patterns_f15)
         
         # ✅ الأنماط الجديدة بدل f1,f4,f6,f11
         l7 = random.choice(a)
@@ -571,7 +571,7 @@ def gen_user(choice):
             patterns_f15 = [
                 l6 + l6 + d5 + l6 + l6 + d5 + l6,
                 l6 + d5 + l6 + l6 + d5 + l6 + l6,
-                d5 + l6 + l6 + d5 + l6 + l6 +極端 d5
+                d5 + l6 + l6 + d5 + l6 + l6 + d5
             ]
             f15 = random.choice(patterns_f15)
             
@@ -581,7 +581,7 @@ def gen_user(choice):
             new_patterns = [
                 l7 + l7 + l8 + l8 + l8,
                 l8 + l8 + l8 + l7 + l7,
-                l7 + l8 + l8 + l7 +極端 l7,
+                l7 + l8 + l8 + l7 + l7,
                 l7 + l8 + l7 + l8 + l7,
                 l7 + c + l8 + l8 + l8,
                 l8 + l8 + l7 + c + l8,
@@ -620,7 +620,7 @@ def gen_user(choice):
     if choice == "29":
         arabic_names = [
             "Ali", "Hussain", "Haider", "Abbas", "Karrar", "Mahdi", "Mustafa",
-            "Mohammed", "Ah極端med", "Jasim", "Qasim", "Murtadha", "Miqdad", "Sajad",
+            "Mohammed", "Ahmed", "Jasim", "Qasim", "Murtadha", "Miqdad", "Sajad",
             "Mahmoud", "Yousef", "Ibrahim", "Ammar", "Karam", "Malik",
             "Faris", "Jaafar", "Hamza", "Mushtaq", "Nizar", "Jamal",
             "Thamer", "Qais", "Waleed", "Fadhel", "Manaf", "Moayad",
@@ -786,7 +786,7 @@ async def _(event):
             ch = str(msg[1])
             await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-            @Tepthon.on極端(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
+            @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
             async def _(event):
                 if "on" in isauto:
                     msg = await event.edit(f"التثبيت وصل لـ({trys}) من المحاولات")
